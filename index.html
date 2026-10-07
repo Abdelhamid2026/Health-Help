@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>HealthHelp - Assistant santé</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            HealthHelp
+        </div>
+
+        <nav>
+            <a href="#">Accueil</a>
+            <a href="#comment">Comment ça marche</a>
+            <a href="#aide">Aide</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <h1>
+                Comprenez mieux vos symptômes
+            </h1>
+
+            <p>
+                Décrivez vos symptômes et obtenez
+                des informations générales sur les causes
+                possibles et les mesures à prendre.
+            </p>
+
+        </section>
+
+
+        <section class="search-box">
+
+            <h2>
+                Quels sont vos symptômes ?
+            </h2>
+
+            <p>
+                Décrivez ce que vous ressentez.
+            </p>
+
+            <textarea
+                id="symptomes"
+                placeholder="Exemple : j'ai de la fièvre, mal à la tête et je suis fatigué..."
+            ></textarea>
+
+            <button onclick="analyserSymptomes()">
+                Analyser mes symptômes
+            </button>
+
+        </section>
+
+
+        <section id="resultat"
+                 class="resultat">
+
+        </section>
+
+
+        <section id="comment"
+                 class="information">
+
+            <h2>
+                Comment fonctionne HealthHelp ?
+            </h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>1. Décrivez</h3>
+
+                    <p>
+                        Écrivez les symptômes que vous ressentez.
+                    </p>
+                </div>
+
+
+                <div class="card">
+                    <h3>2. Analyse</h3>
+
+                    <p>
+                        Le site recherche les symptômes
+                        correspondants dans sa base d'informations.
+                    </p>
+                </div>
+
+
+                <div class="card">
+                    <h3>3. Informations</h3>
+
+                    <p>
+                        Vous obtenez des informations générales
+                        et des conseils de prudence.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="aide"
+                 class="warning">
+
+            <h2>
+                ⚠️ Important
+            </h2>
+
+            <p>
+                Ce site fournit des informations générales
+                et ne remplace pas un médecin ou un professionnel
+                de santé.
+            </p>
+
+            <p>
+                En cas de symptôme grave ou d'urgence,
+                contactez immédiatement les services d'urgence
+                de votre pays.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 HealthHelp
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
